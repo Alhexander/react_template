@@ -1,0 +1,135 @@
+*,
+ :after,
+ :before {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-01 {
+  background-color: #20232a;
+  color: #ffffff;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header-02 {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-03 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+}
+
+.header-logo {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin-right: 10px;
+  height: 100%;
+  align-items: center;
+  color: #61dafb;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+}
+
+img {
+  height: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-name {
+  color: inherit;
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  width: 60%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+}
+
+.header-a {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #ffffff;
+  transition: color 0.2s ease-out;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: 300;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+}
+
+@media (min-width: 780px) {
+  .header-02,
+  [data-header-02] {
+    width: 90%;
+  }
+}
+
+@media (min-width: 600px) {
+  .header-logo,
+  [data-header-logo] {
+    width: calc(100% / 6);
+  }
+}
